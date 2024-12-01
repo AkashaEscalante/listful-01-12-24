@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a ListFul</title>
+    <style>
+        /* Colores personalizados */
+        :root {
+            --color-primary: #6f4e37; /* Marrón oscuro */
+            --color-secondary: #a67c52; /* Marrón medio */
+            --color-accent: #ddbc9b; /* Marrón claro */
+            --color-background: #f7f3e9; /* Beige claro */
+            --color-white: #ffffff;
+        }
+
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-background);
+            color: var(--color-primary);
+        }
+
+        h1, h2, p {
+            margin: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--color-primary);
+            padding: 10px 0;
+            color: var(--color-white);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--color-white);
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--color-accent);
+        }
+
+        .login-btn {
+            background-color: var(--color-accent);
+            color: var(--color-primary);
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-left: 20px; /* Espacio entre el enlace y el botón */
+        }
+
+        .login-btn:hover {
+            background-color: var(--color-secondary);
+        }
+
+        /* Contenedor principal */
+        .intro {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(247, 243, 233, 0.9); /* Fondo más opaco para contraste */
+            border-radius: 15px;
+        }
+
+        /* Contenido de la introducción */
+        .intro-content {
+            max-width: 600px;
+            background-color: var(--color-white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro-title {
+            font-size: 2.5rem;
+            color: var(--color-primary);
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .intro-text {
+            font-size: 1.3rem; /* Aumenta el tamaño del texto */
+            color: var(--color-secondary);
+            margin-bottom: 20px;
+            line-height: 1.6; /* Añade más espacio entre las líneas para mayor legibilidad */
+        }
+
+        .intro-btn {
+            background-color: var(--color-secondary);
+            color: var(--color-white);
+            padding: 15px 25px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .intro-btn:hover {
+            background-color: var(--color-primary);
+        }
+
+        /* Estilos del footer */
+        footer {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: var(--color-accent);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: var(--color-secondary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header de la página -->
+    <header>
+        <div class="logo">
+            <span class="emoji">🐒</span> ListFul
+        </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="about.html">Acerca de</a>
+            <a href="contact.html">Contacto</a>
+            <a href="index.html">
+                <button class="login-btn">Iniciar sesión</button>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Sección de Introducción -->
+    <section class="intro">
+        <div class="intro-content">
+            <h1 class="intro-title">Bienvenido a ListFul</h1>
+            <p class="intro-text">
+                Simplifica tu vida y organiza tus tareas diarias con facilidad. ListFul es tu asistente personal para mantener
+                tus pendientes bajo control, fijar objetivos y alcanzar tus metas. Con una interfaz intuitiva y recordatorios
+                personalizados, nunca olvidarás lo que es importante.
+            </p>
+            <a href="login.html">
+                <button class="intro-btn">Comenzar</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 ListFul. Todos los derechos reservados.</p>
+        <p>
+            <a href="privacy.html">Política de privacidad</a> | 
+            <a href="terms.html">Términos y condiciones</a>
+        </p>
+    </footer>
+</body>
+</html>
